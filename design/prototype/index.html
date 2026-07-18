@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>NovaOS Prototype</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
     <!-- Top Panel -->
@@ -17,58 +14,102 @@
     <header class="panel">
 
         <div class="panel-left">
-
             <span class="logo">NovaOS</span>
-
         </div>
 
         <div class="panel-right">
-
             <span>WiFi</span>
-
             <span>🔊</span>
-
             <span>🔋</span>
-
             <span id="clock">12:00</span>
-
         </div>
 
     </header>
 
     <!-- Desktop -->
 
-    	<main class="desktop">
+    <main class="desktop">
 
-    		<div class="welcome">
+        <div class="welcome">
+            <h1>Welcome to NovaOS</h1>
+            <p>Power Without Weight</p>
+        </div>
 
-        		<h1>Welcome to NovaOS</h1>
+    </main>
 
-        		<p>Power Without Weight</p>
+    <!-- Launcher -->
 
-    		</div>
+    <div id="launcher" class="launcher">
 
-	</main>
+        <div class="launcher-box">
+
+            <input
+                id="search"
+                type="text"
+                placeholder="Search apps, files, settings..."
+            >
+
+            <div class="app-grid" id="appGrid">
+
+                <button data-name="Files">📁 Files</button>
+
+                <button data-name="Browser">🌐 Browser</button>
+
+                <button data-name="Settings">⚙️ Settings</button>
+
+                <button data-name="Store">🛍️ Store</button>
+
+                <button data-name="Terminal">💻 Terminal</button>
+
+                <button data-name="Notes">📝 Notes</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
 
     <!-- Dock -->
 
-<footer class="dock">
+    <footer class="dock">
 
-    <button title="Nova Files">📁</button>
+    <div class="dock-item active">
+        <button>📁</button>
+        <span></span>
+    </div>
 
-    <button title="Nova Browser">🌐</button>
+    <div class="dock-item">
+        <button>🌐</button>
+        <span></span>
+    </div>
 
-    <button title="Nova Store">🛍️</button>
+    <div class="dock-item">
+        <button>🛍️</button>
+        <span></span>
+    </div>
 
-    <button title="Nova Settings">⚙️</button>
+    <div class="dock-item">
+        <button>⚙️</button>
+        <span></span>
+    </div>
 
-    <button title="Nova Terminal">⌨️</button>
+    <div class="dock-item">
+        <button>💻</button>
+        <span></span>
+    </div>
 
 </footer>
 
-    <script src="script.js"></script>
+    <script src="js/clock.js"></script>
+
+    <script src="js/launcher.js"></script>
+
+    <script src="js/dock.js"></script>
+
+    <script src="js/window.js"></script>
+
+    <script src="js/app.js"></script>
 
 </body>
-
 </html>
-

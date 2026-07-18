@@ -1,0 +1,1 @@
+console.log("NovaOS Boot Complete");

@@ -15,7 +15,13 @@ const Nova = {
 
                 <span>${options.icon} ${options.title}</span>
 
-                <button class="close-btn">✕</button>
+                <div class="window-buttons">
+
+                    <button class="min-btn">−</button>
+
+                    <button class="close-btn">✕</button>
+
+                </div>
 
             </div>
 
@@ -31,11 +37,19 @@ const Nova = {
 
         const closeBtn = windowEl.querySelector(".close-btn");
 
+        const minBtn = windowEl.querySelector(".min-btn");
+
         const titlebar = windowEl.querySelector(".window-titlebar");
 
         let isDragging = false;
         let offsetX = 0;
         let offsetY = 0;
+
+        minBtn.addEventListener("click",()=>{
+
+            windowEl.style.display="none";
+
+        });
 
         closeBtn.addEventListener("click",()=>{
 
